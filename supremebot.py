@@ -23,7 +23,6 @@ sizes = []
 
 
 driver = webdriver.Chrome(executable_path = "/usr/local/selenium/webdriver/chrome/chromedriver")
-time.sleep(15)
 driver.get("http://www.supremenewyork.com/shop/all/" + item_category)
 
 item_name_colors = driver.find_elements_by_class_name('name-link')
